@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Catalogue Page</title>
+    <style>
+      *{
+        font-family: Arial;
+      }
+      body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+      }
+      header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: 1px solid rgba(128, 128, 128, 0.5);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        height: 68px;
+      }
+      #main-head{
+        margin-left: 10px;
+      }
+      #list{
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        column-gap: 5%;
+        row-gap: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+      .bkel{
+        display: grid;
+        grid-template-columns: 1fr;
+        border: 1px solid black;
+        background-color: lightgray;
+      }
+      .bkimg{
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+      }
+      table{
+        border: 1px solid lightgray;
+        background-color: white;
+      }
+      td{
+        border: 1px solid lightgray;
+      }
+      .avl, .unavl{
+        text-align: center;
+        color: green;
+      }
+      .unavl{
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img class="icon" src="icon1.png" width="20px" height="20px">
+      <h1 class="HeaderLogo">Z-Books</h1>
+      <img class="icon" src="icon2.png" width="30px" height="30px">
+    </header>
+    <main>
+      <h2 id="main-head">Book List:<hr></h2>
+      <div id="list">
+        <div class="bkel">
+          <img class="bkimg" src="1984.jpeg">
+          <label class="avl">Available</label>
+          <table>
+            <tr>
+              <td>
+                Title
+              </td>
+              <td>
+                1984
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Author
+              </td>
+              <td>
+                George Orwell
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Genre
+              </td>
+              <td>
+                Distopia, Futuristic Politics
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="bkel">
+          <img class="bkimg" src="shaaabeeb.jpeg">
+          <label class="unavl">Unavailable</label>
+          <table>
+            <tr>
+              <td>
+                Title
+              </td>
+              <td>
+                شآبيب
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Author
+              </td>
+              <td>
+                أحمد خالد توفيق
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Genre
+              </td>
+              <td>
+                Survival, Social, Political
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="bkel">
+          <img class="bkimg" src="Animal Farm.jpeg">
+          <label class="unavl">Unavailable</label>
+          <table>
+            <tr>
+              <td>
+                Title
+              </td>
+              <td>
+                Animal Farm
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Author
+              </td>
+              <td>
+                George Orwell
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Genre
+              </td>
+              <td style="font-size: 13px;">
+                Fiction, Politically-oriented and ideaologically-oriented 
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="bkel">
+          <img class="bkimg" src="Turab El-Mas.jpeg">
+          <label class="avl">Available</label>
+          <table>
+            <tr>
+              <td>
+                Title
+              </td>
+              <td>
+                تراب الماس
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Author
+              </td>
+              <td>
+                أحمد مراد
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Genre
+              </td>
+              <td>
+              Crime, thriller, mystery, philosophical
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="bkel">
+          <img class="bkimg" src="Utopia.jpeg">
+          <label class="avl">Available</label>
+          <table>
+            <tr>
+              <td>
+                Title
+              </td>
+              <td>
+                يوتوبيا
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Author
+              </td>
+              <td>
+                أحمد خالد توفيق
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Genre
+              </td>
+              <td>
+              Distopian Future, political, road-trip
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="bkel">
+          <img class="bkimg" src="Les Miserables.jpeg">
+          <label class="avl">Available</label>
+          <table>
+            <tr>
+              <td>
+                Title
+              </td>
+              <td>
+                Les Miserables
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Author
+              </td>
+              <td>
+                Victor Hugo
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Genre
+              </td>
+              <td style="font-size: 13px;">
+                Historical, Revolution, Political conflict, Romance, Redemption
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="bkel">
+          <img class="bkimg" src="100 years of solitude.jpeg">
+          <label class="unavl">Unavailable</label>
+          <table>
+            <tr>
+              <td>
+                Title
+              </td>
+              <td>
+                100 years of solitude
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Author
+              </td>
+              <td>
+                Gabriel Garthia Markiz
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Genre
+              </td>
+              <td style="font-size: 13px;">
+                Fictional, Melancholic, Philosophical
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

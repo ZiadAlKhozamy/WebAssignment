@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Book Store Log-In</title>
+    <style>
+      *{
+        font-family: Arial;
+      }
+      body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+      }
+      header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: 1px solid rgba(128, 128, 128, 0.5);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        height: 68px;
+      }
+      .HeaderLogo{
+        margin-top: 5px;
+        color: rgb(146, 146, 146);
+      }
+      .icon{
+        cursor: pointer;
+      }
+      main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+      }
+      form{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid lightgray;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 30px;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+        margin-top: 70px;
+        margin-bottom: 50px;
+      }
+      .sec{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 50px;
+      }
+      .quest{
+        display: flex;
+        flex-direction: column;
+        margin-left: 25px;
+        margin-right: 25px;
+      }
+      .prompt{
+        font-size: 14px;
+        color:rgb(114, 114, 114);
+        margin-bottom: 5px;
+        margin-left: 5px;
+      }
+      .txtinp{
+        height: 30px;
+        width: 200px;
+        border: 1px solid lightgray;
+        border-radius: 7px;
+      }
+      submit{
+        color: white;
+        background-color: rgb(0, 132, 255);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-radius: 5px;
+        margin-left: 25px;
+        cursor: pointer;
+        transition: background-color 0.25s;
+      }
+      submit:hover {
+        background-color: rgb(0, 8, 255);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img class="icon" src="icon1.png" width="20px" height="20px">
+      <h1 class="HeaderLogo">Z-Books</h1>
+      <img class="icon" src="icon2.png" width="30px" height="30px">
+    </header>
+    <main>
+      <form>
+        <div class="sec">
+          <div class="quest">
+            <label class="prompt">First Name</label>
+            <input class="txtinp" type="text" placeholder="ex: John">
+          </div>
+          <div class="quest">
+            <label class="prompt">Last Name</label>
+            <input class="txtinp" type="text" placeholder="ex: Doe">
+          </div>
+        </div>
+        <div class="sec">
+          <div class="quest">
+            <label class="prompt">Phone Number</label>
+            <input class="txtinp" type="text" placeholder="Enter your phone number">
+          </div>
+          <div class="quest">
+            <label class="prompt">Social Security Number</label>
+            <input class="txtinp" type="text" placeholder="Enter your SSN">
+          </div>          
+        </div>
+        <div class="sec">
+          <div class="quest">
+            <label class="prompt">Date of Birth</label>
+            <input class="txtinp" type="text" placeholder="ex: 13/7/1980">
+          </div>
+          <div class="quest">
+            <label class="prompt">Email</label>
+            <input class="txtinp" type="text" placeholder="ex: example@gmail.com">
+          </div>     
+        </div>
+        <div class="sec">
+        <submit id="sbmt">Submit</submit>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

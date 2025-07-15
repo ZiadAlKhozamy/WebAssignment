@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Book Store Homepage
+    </title>
+    <style>
+      *{
+        font-family: Arial;
+      }
+      body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+      }
+      header, footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: 1px solid rgba(128, 128, 128, 0.5);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        height: 68px;
+      }
+      .HeaderLogo{
+        margin-top: 5px;
+        color: rgb(146, 146, 146);
+      }
+      .icon{
+        cursor: pointer;
+      }
+      main{
+        display: flex;
+        flex-direction: column;
+      }
+      #wlcmsg{
+        color: white;
+        background-color: gray;
+        text-align: center;
+        align-self: center;
+        width: 500px;
+        font-size: 50px;
+        padding-bottom: 10px;
+
+      }
+      #interline{
+        font-size: 15px;
+      }
+      #starters{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 200px;
+      }
+      #intro{
+        width: 270px;
+        height: 100%;
+        border: 1px solid gray;
+        background-color: lightgray;
+        margin-bottom:100%;
+      }
+      #intro-head{
+        font-size: 15px;
+      }
+      #highlights{
+        flex: 1;
+        background-color: wheat;
+      }
+      #intro:not(#intro-head){
+        font-size: 14px;
+      }
+      #hl-head{
+        font-size: 20px;
+      }
+      #highlights:not(#hl-head){
+        padding-left: 10px;
+        font-weight: bold;
+      }
+      a{
+        text-decoration: underline;
+        color: blue;
+        cursor: pointer;
+      }
+      #core{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 35px;
+        margin-bottom: 100px;
+      }
+      #srch{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        text-align: center;
+      }
+      #srch-bar{
+        width: 75%;
+        height: 30px;
+        margin-left: 12.5%;
+        margin-right: 12.5%;
+        border: 1px solid gray;
+        border-radius: 5px;
+      }
+      #srch-head{
+        font-size: 25px;
+        color: gray;
+      }
+      #srvc{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 15%;
+        margin-right: 15%;
+      }
+      .icons{
+        padding: 25px;
+        cursor: pointer;
+        text-align: center;
+        color: white;
+        background-color: rgb(226, 172, 72);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+      footer{
+        padding-top: 20px;
+        height: 50px;
+        font-size: 15px;
+        color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img class="icon" src="icon1.png" width="20px" height="20px">
+      <h1 class="HeaderLogo">Z-Books</h1>
+      <img class="icon" src="icon2.png" width="30px" height="30px">
+    </header>
+    <main>
+      <section id="wlcmsg">
+        Welcome To Z-Books
+        <span id="interline"> 
+          <br>Where you can <u><strong>find</strong> any book in <strong>mind</strong></u>
+        </span>
+      </section>
+      <section id="starters">
+        <section id="highlights">
+          <u id="hl-head">Today's Highlights</u>:<br><br>
+          <p>
+              - Discount on any package with four books or more<br><br>
+              - Ahmed Mourad's latest book is finally available. <a>Buy Now!</a><br><br>
+              - Acquire all of Naguib Mahfouz's works with our special collection.<br><br>        
+          </p>
+        </section>
+        <section id="intro">
+        <strong id="intro-head">What is Z-Books?</strong><br><br>
+          Z-Books is a website where you can find, buy, or even lend any book you want.
+          With over 2 Million books, we're sure we can find what you're looking for.  
+        </section>
+      </section>
+      <section id="core">
+        <div id="srch">
+          <lable id="srch-head">Search or click an icon</lable>
+          <input id="srch-bar" type="text" placeholder="Type a book's title or an author's name here">
+        </div>
+        <div id="srvc">
+          <b class="icons">LEND</b>
+          <b class="icons">BUY</b>
+          <b class="icons">BORROW</b>
+        </div>
+      </section>
+    </main>
+    <footer>
+        If you have any problem or feedback, feel free to contact us at:<br> +201060260876, Z-Bookstore@gmail.com
+    </footer>
+  </body>
+</html>
