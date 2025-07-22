@@ -3,6 +3,9 @@
   <head>
     <title>Catalogue Page</title>
     <style>
+      p{margin: 0;
+      padding: 0;
+      }
       *{
         font-family: Arial;
       }
@@ -123,14 +126,15 @@
     <h2 id="head">Complete the purchase:<hr></h2>
     <main>
       <form>
+        <p id="msg"></p>
         <div class="sec">
+          <div class="quest">
+            <label class="prompt">First Name</label>
+            <input class="txtinp" type="text" placeholder="Enter your first name">
+          </div>
           <div class="quest">
             <label class="prompt">Card Number</label>
             <input class="txtinp" type="text" placeholder="Enter your card number">
-          </div>
-          <div class="quest">
-            <label class="prompt">Postal Code</label>
-            <input class="txtinp" type="text" placeholder="Enter your postal code">
           </div>
         </div>
         <div class="sec">
@@ -197,7 +201,7 @@
         <p  id="total">Total Ptice: 119.99 USD$</p>
       </div>
     </main>
-    <script src="PurchaseScript.js">
+    <script src="PurchseScript.js">
     </script>
   </body>
 </html>
